@@ -1,0 +1,17 @@
+Algoritmos y Programación I (95.11) – Curso Essaya – 1er parcialito – 23/09/2022
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Escribir una función
+void imprimir_numero(int n);
+que dado un número n lo imprima por stdout. Este problema debe ser resuelto sin el uso de ninguna
+función de biblioteca con excepción de putchar().
+Por ejemplo, si la función se invoca como imprimir_numero(9511); la misma debe imprimir por la
+pantalla 9511.
+2. Un conocido periodista emprendió una cruzada contra el lenguaje inclusivo en el cual considera que
+cualquier palabra que contenga el carácter 'e' es un ejemplo de esto y debe ser censurado.
+a. Escribir una función es_inclusiva que reciba una cadena de caracteres y que retorne si contiene
+alguna letra 'e' o no.
+b. Escribir un pequeño ejemplo de código que invoque a la función con alguna cadena e imprima
+un mensaje según el resultado.
+3. Escribir un programa que le pida al usuario una distancia y un tiempo y que, de ser posible, calcule y
+muestre la velocidad asociada.
+¡Suerte! :)

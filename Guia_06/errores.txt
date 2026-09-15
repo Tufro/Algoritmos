@@ -1,0 +1,18 @@
+Ej_7.c:36:6: error: conflicting types for ‘split’; have ‘_Bool(const char *, const int *, size_t,  char ***)’ {aka ‘_Bool(const char *, const int *, long unsigned int,  char ***)’}
+   36 | bool split(const char *s, const int *anchos, size_t ncampos, char *** campos) {
+      |      ^~~~~
+Ej_7.c:5:8: note: previous definition of ‘split’ with type ‘char **(const char *, const int *, size_t)’ {aka ‘char **(const char *, const int *, long unsigned int)’}
+    5 | char **split(const char *s, const int *anchos, size_t ncampos) {
+      |        ^~~~~
+Ej_7.c: In function ‘split’:
+Ej_7.c:38:19: error: too few arguments to function ‘split’; expected 4, have 3
+   38 |         *campos = split(s, anchos, ncampos);
+      |                   ^~~~~
+Ej_7.c:36:6: note: declared here
+   36 | bool split(const char *s, const int *anchos, size_t ncampos, char *** campos) {
+      |      ^~~~~
+Ej_7.c: In function ‘main’:
+Ej_7.c:53:32: error: ‘i’ undeclared (first use in this function)
+   53 |                 free(resultado[i]);
+      |                                ^
+Ej_7.c:53:32: note: each undeclared identifier is reported only once for each function it appears in

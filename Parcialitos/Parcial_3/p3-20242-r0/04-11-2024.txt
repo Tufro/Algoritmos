@@ -1,0 +1,41 @@
+Algoritmos y Programación I (TA130) – Curso Santisi – 3er parcialito –
+04/11/2024
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Se quiere implementar un sistema de turnos en un banco. Para esto se propone
+un TDA que registre cada cliente que ingrese y que permita llamar al primero
+que llegó.
+a. Declarar la estructura que encapsula el TDA. Explicar qué representa
+cada miembro y documentar la invariante de representación.
+b. Implementar la primitiva char *turnos_proximo(turnos_t *t); que
+devuelva el próximo cliente esperando en el sistema de turnos t.
+c. Implementar la primitiva bool turnos_nuevo(turnos_t *t, const
+char *cliente); que registre la llegada de un nuevo cliente en el
+sistema.
+turnos_t *t = turnos_crear();
+turnos_nuevo(t, "Juan");
+turnos_nuevo(t, "María");
+turnos_nuevo(t, "Carlos");
+turnos_proximo(t); // Juan
+turnos_proximo(t); // María
+turnos_nuevo(t, "Marta");
+turnos_proximo(t); // Carlos
+2. Se tiene un archivo de texto para configurar una aplicación. Cada línea del
+archivo es una secuencia: "clave=valor\n".
+a. Se pide escribir una función bool leer_clave_valor(FILE *f, char
+*clave, char *valor); que lea de un archivo f una línea y devuelva la
+clave y el valor leídos. La función debe devolver false en caso de falla.
+b. Se pide escribir una función bool escribir_clave_valor(FILE *f,
+const char *clave, const char *valor); que escriba en el archivo f
+un par clave-valor en el formato indicado. La función debe devolver
+false en caso de falla.
+3. Escribir un programa que se ejecute como:
+./reconfigurar vieja.conf nueva.conf clave valor
+que tome un archivo de configuración como el del ejercicio 2. vieja.conf y
+genere con él un archivo nueva.conf actualizado. El archivo actualizado deberá
+contener la misma configuración de vieja.conf pero la clave dada se debe
+reemplazar por el valor nuevo. En caso de que la clave no se encuentre en el
+archivo vieja.conf agregarla al final del archivo nuevo.
+Se deben reutilizar las funciones del ejercicio 2.
+¡Suerte! :)
+
+

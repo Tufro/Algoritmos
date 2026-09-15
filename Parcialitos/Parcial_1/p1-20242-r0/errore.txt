@@ -1,0 +1,4 @@
+Ej_2.c: In function ‘main’:
+Ej_2.c:26:61: error: lvalue required as left operand of assignment
+   26 |                         if(i == j ? a[i][j] = 1.0 : a[i][j] = 0);
+      |                                                             ^

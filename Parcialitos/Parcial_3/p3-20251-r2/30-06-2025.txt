@@ -1,0 +1,38 @@
+Algoritmos y Programación (TA130) – Curso Santisi – 3er parcialito, 2do recupera-
+torio – 30/06/2025
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Se quiere modelar el TDA votación, que permita decidir entre diferentes opciones. Se pide:
+a. Declarar la estructura que encapsula el TDA. Explicar qué representa cada miembro y
+documentar la invariante de representación.
+b. Implementar la primitiva float votacion_porcentaje_opcion(const votacion_t
+*v, const char *opcion); que devuelva el porcentaje de votos de la opcion.
+c. Implementar la primitiva bool votacion_votar(votacion_t *v, const char
+*opcion); que agregue la opción a la lista de opciones.
+votacion_t *v = votacion_crear();
+votacion_votar(v, "membrillo");
+votacion_votar(v, "batata");
+votacion_votar(v, "pastelera");
+votacion_votar(v, "batata");
+votacion_porcentaje_opcion(v, "membrillo"); // 0.25 o 25
+2. El Ministerio del Interior decidió modernizarse y publicar el calendario de feriados en un
+archivo binario. El mismo es una sucesión de registros con el siguiente formato:
++-------+-------+-------+--------+
+| dia | mes | n | motivo |
++-------+-------+-------+--------+
+donde dia, mes y n son números de 1 byte, mientras que motivo es una cadena de caracteres
+de longitud n (no incluye el '\0').
+Se tiene una estructura struct feriado { char dia, mes; char *motivo; };
+Implementar una función bool leer_feriado(FILE *f, struct feriado *feriado); que
+reciba un archivo f abierto en lectura binaria y una estructura feriado no inicializada y
+cargue los datos en la estructura. La función debe devolver false en caso de error.
+3. Escribir un programa que se ejecute como:
+$ ./hd <-n=[nn]> [archivo]
+que haga un volcado en pantalla del archivo [archivo] binario. Cada uno de los bytes del
+archivo se imprimirán como dos dígitos hexadecimales. Por omisión se imprimirán 16 bytes
+del archivo por línea, pero si estuviera presente el modificador -n= se imprimirán [nn] bytes
+por línea.
+Por ejemplo, para un archivo.txt de contenido ¡Programación! la ejecución ./hd -n=10
+archivo.txt imprimirá
+c2 a1 50 72 6f 67 72 61 6d 61
+63 69 c3 b3 6e 21
+¡Suerte! :)3

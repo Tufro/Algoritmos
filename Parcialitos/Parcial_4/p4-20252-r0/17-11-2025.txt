@@ -1,0 +1,23 @@
+Algoritmos y Programación (TA130) – Curso Santisi – 4to parcialito – 17/11/2025
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Teniendo representado el TDA lista genérica como typedef struct {struct nodo *prim;}
+lista_t; y el nodo struct nodo {struct nodo *sig; void *dato;}; implementar una primitiva
+void *lista_buscar(const lista_t *l, void *e, int (*cmp)(void *a, void *b));
+que busque la primera ocurrencia del elemento e en la lista y devuelva ese dato. La función cmp
+devuelve 0 si dos elementos son iguales.
+2. Se tiene una escructura typedef struct { int padron, nota; } nota_t que se utiliza para representar la nota a un determinado examen. Se tiene un examen y su recuperatorio, los alumnos
+pueden presentarse a rendir a cualquiera de los dos, si se presentan a los dos le corresponde la nota
+más alta. Implementar una función
+nota_t *consolidar_notas(const nota_t parcial[], size_t np,
+const nota_t recuperatorio[], size_t nr, size_t *nc);
+que dados dos vectores con las np notas del parcial y las nr notas del recuperatorio ambos
+ordenados por padrón, compute de forma eficiente las notas finales consolidadas. Se debe devolver
+el vector de los consolidados y su tamaño nc.
+3. Una matriz de n × m representa un laberinto al que se entra por la posición (0, 0) y se sale por la
+posición (n−1, m−1). Las celdas que valen 0 son transitables mientras que las que valen 1 representan
+una pared. Sólo se puede caminar hacia la derecha y hacia abajo. Implementar una función:
+bool hay_solucion(size_t n, size_t m, const char laberinto[n][m]);
+que utilizando recursividad devuelva si el laberinto tiene solución o no.
+¡Suerte! :)
+
+

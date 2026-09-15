@@ -1,0 +1,19 @@
+Algoritmos y Programación (TA130) – Curso Santisi – 4to parcialito – 13/06/2025
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Teniendo representado el TDA lista genérica como typedef struct {struct nodo *prim;}
+lista_t; y el nodo struct nodo {struct nodo *sig; void *dato;}; implementar una primitiva
+void *lista_borrar(lista_t *l, void *e, int (*cmp)(void *a, void *b));
+que busque la primera ocurrencia del elemento e en la lista y elimine ese nodo devolviendo el elemento.
+La función cmp devuelve 0 si dos elementos son iguales.
+2.
+
+a. Hacer el seguimiento para el algoritmo de QuickSort tomando como pivote el elemento medio
+del siguiente vector:
+[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+b. ¿Qué pasaría si en vez de tomar como pivote el elemento del medio se tomara uno de los
+extremos?
+
+3. Escribir una función bool vector_contiene(int v[], size_t n, int e); que utilizando recursividad indique si un vector v de n elementos contiene o no el elemento e.
+¡Suerte! :)
+
+

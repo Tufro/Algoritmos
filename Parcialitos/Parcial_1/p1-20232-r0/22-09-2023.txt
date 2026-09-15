@@ -1,0 +1,22 @@
+Algoritmos y Programación I (95.11) – Curso Santisi – 1er parcialito – 22/09/2023
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Escribir mensajes de chat es cansador y ni te cuento leerlos después. Se propone un formato para acortar
+mensajes consistente en eliminar sus vocales. Por ejemplo, el texto "algoritmos y programacion" puede
+resumirse como "lgrtms y prgrmcn".
+a. Implementar una función void abreviar_texto(char nombre[]); que reciba una cadena de caracteres
+y la abrevie según este formato. Asumir que la cadena tiene únicamente minúsculas.
+No se permite el uso de funciones de biblioteca en este ejercicio. Todo lo necesario debe ser implementado.
+b. Con un pequeño código mostrar cómo utilizar a la función con la cadena del ejemplo anterior.
+2. Se tienen matrices en las que, sin importar el contenido de su primera fila y su primera columna, se quiere
+verificar que el resto de sus elementos sean la suma del elemento de arriba y el de la izquierda. Es decir, que
+cada Ai,j = Ai−1,j + Ai,j−1.
+a. Escribir una función es_suma que reciba una matriz de flotantes de tamaño N×M y retorne si la misma
+cumple con la condición pedida o no.
+b. Teniendo #define N 3 escribir un pequeño ejemplo de código que declare y defina una matriz, llame a
+la función del punto anterior e imprima un mensaje para el usuario según el resultado.
+3. En los partidos de fútbol se juegan dos tiempos de 45 minutos cada uno. En la Argentina un evento en un
+partido se registra como el tiempo y los minutos, por ejemplo 39 minutos del 2do tiempo, mientras que
+internacionalmente los tiempos se registran como minutos totales, para el ejemplo anterior 84 minutos.
+Escribir un programa que le pida al usuario la cantidad de minutos y el tiempo del evento de un partido y
+que, de ser posible, le muestre la cantidad de minutos totales.
+Realizar todas las validaciones pertinentes.

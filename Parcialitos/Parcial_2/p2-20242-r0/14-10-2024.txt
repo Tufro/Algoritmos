@@ -1,0 +1,19 @@
+Algoritmos y Programación I (TA130) – Curso Santisi – 2do parcialito – 14/10/2024
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. En el sistema BCD se utilizan 4 bits para representar dígitos decimales del 0 al 9. En un byte podemos
+encapsular dos dígitos BCD.
+Implementar una función:
+uint16_t sumar(uint8_t a, uint8_t b);
+que reciba dos números de 2 dígitos BCD y devuelva su suma (que puede tener hasta 3 dígitos).
+2. Se tiene un tipo vector_t definido sobre una estructura. La misma tiene dos miembros: v de tipo
+float * y n de tipo size_t, donde v es un vector dinámico de flotantes de longitud n:
+Declarar la estructura struct vector,
+Redefinirla como vector_t,
+Implementar la función:
+vector_t *vector_clonar(const vector_t *vector);
+que realiza una copia completa de vector en memoria nueva y la devuelva.
+3. Implementar una función char *leer_linea(); que lea una línea desde stdin (hasta el '\n'). Debe
+devolver la cadena leída o NULL en caso de error.
+¡Suerte! :)
+
+

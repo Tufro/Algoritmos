@@ -1,0 +1,7 @@
+Ej_2.c: In function ‘main’:
+Ej_2.c:38:11: warning: ‘v’ is used uninitialized [-Wuninitialized]
+   38 |         if(!v) return 1;
+      |           ^
+Ej_2.c:37:20: note: ‘v’ was declared here
+   37 |         vector_t  *v;
+      |                    ^

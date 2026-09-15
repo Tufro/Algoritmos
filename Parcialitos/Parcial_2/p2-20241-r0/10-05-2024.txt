@@ -1,0 +1,26 @@
+Algoritmos y Programación I (TA130–95.11) – Curso Santisi – 2do parcialito – 10/05/2024
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Se requiere implementar por software la instrucción Biet Field Extract de los procesadores Intel x86:
+uint32_t bextr(uint32_t a, uint16_t b);
+El byte más liviano de b es un inicio y el más pesado una longitud. La función extrae longitud bits de a a
+partir de esa posición.
+Ejemplo: a = 1001 0011 1011 1101, b = 0000 1000 0000 0100, en este caso el inicio es 0000 0100, es
+decir 4 y la longitud es 0000 1000, es decir 8. Entonces se extraerán 8 bits de a desde la posición 4 y se
+devolverá 0011 1011.
+2. Se tiene un tipo terminal_t definido sobre una estructura. La misma tiene dos miembros: historial de
+tipo char (*)[MAX_STRING] y nhistorial de tipo size_t:
+Declarar la estructura struct terminal,
+Redefinirla como terminal_t,
+Implementar la función:
+terminal_t *terminal_clonar(const terminal_t *t);
+que realiza una copia completa de t en memoria nueva y la devuelve.
+3. Implementar una función char *centrar(const char *cadena, size_t largo); que centre la cadena a
+una línea de largo caracteres y la devuelva.
+Por ejemplo dada la llamada con ("hola", 10) la función debe devolver la cadena "
+¡Suerte! :)
+
+hola
+
+".
+
+

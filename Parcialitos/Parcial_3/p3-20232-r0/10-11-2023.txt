@@ -1,0 +1,40 @@
+Algoritmos y Programación I (95.11) – Curso Santisi – 3er parcialito –
+10/11/2023
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Se quiere modelar el TDA votación, que permita decidir entre diferentes opciones.
+Se pide:
+a. Declarar la estructura que encapsula el TDA. Explicar qué representa
+cada miembro y documentar la invariante de representación.
+b. Implementar la primitiva float votacion_porcentaje_opcion(const
+votacion_t *v, const char *opcion); que devuelva el porcentaje de
+votos de la opcion.
+c. Implementar la primitiva bool votacion_votar(votacion_t *v,
+const char *opcion); que agregue la opción a la lista de opciones.
+votacion_t *v = votacion_crear();
+votacion_votar(v, "membrillo");
+votacion_votar(v, "batata");
+votacion_votar(v, "pastelera");
+votacion_votar(v, "batata");
+votacion_porcentaje_opcion(v, "membrillo"); // 0.25 o 25
+2. Se tiene un archivo binario que contiene un size_t n seguido de n valores
+flotantes de doble precisión, según el siguiente esquema:
++----+----+----+----+----+-+----+
+| n | a1 | a2 | a3 | a4 | ... | an |
++----+----+----+----+----+-+----+
+a. Escribir una función bool escribir_doubles(const char *r, const
+double a[], size_t n); que reciba una ruta r y un arreglo a de n
+doubles y los escriba en un archivo binario según el formato anterior.
+b. Escribir una función double *leer_doubles(const char *r, size_t
+*n); que reciba una ruta r a un archivo binario y devuelva por el nombre
+el arreglo de doubles contenido en él y en n la cantidad de elementos
+leídos.
+3. Dado el formato (y las funciones) del ejercicio 2 escribir un programa que se
+ejecute:
+$ ./transformar entrada salida a b
+que cargue en memoria el arreglo de coordenadas contenido en el archivo
+binario entrada y aplique la transformación ax+b a cada uno de sus elementos
+y lo guarde en el archivo binario salida.
+Se deben utilizar las funciones desarrolladas en el punto 2.
+¡Suerte! :)
+
+

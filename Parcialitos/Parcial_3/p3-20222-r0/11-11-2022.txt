@@ -1,0 +1,28 @@
+Algoritmos y Programación I (95.11) – Curso Essaya – 3er parcialito – 11/11/2022
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. El Decanato nos pidió con suma urgencia que hoy viernes hagamos un sistema para inventariar el estado de los mármoles
+de la facultad para iniciar una campaña de relevamiento el día lunes. Quieren tener un TDA que les permita ir agregando
+el estado de los paneles de cada piso y luego poder saber qué pisos hay que clausurar.
+a. Declarar la estructura que encapsula a este TDA relevamiento_t. Explicar qué representa cada miembro y
+documentar la invariante de representación.
+b. Implementar la primitiva float relevamiento_porcentaje_defectuosos(const relevamiento_t *relevamiento,
+int piso); que devuelva un número entre 0 y 1 según la proporción de mármoles defectuosos en el piso indicado.
+c. Implementar la primitiva bool relevamiento_agregar(relevamiento_t *relevamiento, int piso, bool
+defectuoso); que permita agregar un marmol de un piso indicando si está defectuoso o no.
+2. Se tiene una estructura que representa a una persona como
+typedef struct { char nombre[MAX]; unsigned int dni; float altura; } persona_t;
+se pide:
+a. Escribir una función bool leer_persona(FILE *f, persona_t *p); que lea una persona del archivo binario f
+y la guarde en la estructura p. La función debe devoler false de no poder realizar la operación.
+b. Escribir una función void escribir_persona(FILE *f, const persona_t *p); que dado un archivo de texto
+f escriba en él a la persona p en formato CSV “nombre;dni;altura”.
+c. Escribir una función bool leer_personas(const char *r, persona_t v[], size_t max, size_t *n); que
+reciba una ruta a un archivo binario r y un vector v de max elementos y cargue en él todas las estructuras
+contenidas en el archivo hasta el máximo. La función debe retornar por n la cantidad de estructuras leidas y false
+en caso de falla.
+3. Escribir un programa que se ejecute “$ ./convertir entrada” donde entrada es el nombre de un archivo binario de
+personas que imprima por stdout cada una de las personas del archivo en formato CSV. Si el programa se ejecutara “$
+./convertir --help” se debe imprimir una pequeña ayuda y terminar.
+¡Suerte! :)
+
+

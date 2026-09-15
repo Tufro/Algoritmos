@@ -1,0 +1,26 @@
+Algoritmos y Programación I (95.11) – Curso Santisi – 1er parcialito – 17/04/2023
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. En el mundo del software una forma frecuente de abreviar nombres de proyectos consiste en reemplazar
+todas sus letras, salvo la primera y la última por el número de letras que fueron reemplazadas. Por ejemplo,
+siguiendo esta idea el proyecto "kubernetes" suele abreviarse como "k8s".
+a. Implementar una función void abreviar_nombre(char nombre[]); que reciba una cadena de entre 3
+y 11 caracteres y la abrevie según este formato.
+No se permite el uso de funciones de biblioteca en este ejercicio. Todo lo necesario debe ser implementado.
+b. Con un pequeño código de ejemplo mostrar cómo utilizar a la función con la cadena del ejemplo anterior.
+2. Una matriz es simétrica si tiene simetría con respecto a su diagonal principal o, lo que es lo mismo, si sus
+filas son iguales a sus columnas.
+a. Escribir una función es_simetrica que reciba una matriz de flotantes de tamaño N×N y que retorne si
+la misma es simétrica o no.
+b. Teniendo #define N 3 escribir un pequeño ejemplo de código que declare y defina una matriz, llame a
+la función del punto anterior e imprima un mensaje para el usuario según el resultado.
+3. En un sistema masa-resorte el período se calcula como T = 2π
+qm
+k
+, siendo m la masa y k la constante del
+
+resorte.
+Escribir un programa que le pida al usuario una masa y una constante elástica y que, de ser posible, le
+muestre el período resultante.
+Nota: para calcular una raíz cuadrada puede utilizarse la función double sqrt(double x); de la biblioteca
+<math.h>.
+¡Suerte! :)

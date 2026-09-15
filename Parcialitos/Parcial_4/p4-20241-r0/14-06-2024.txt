@@ -1,0 +1,22 @@
+Algoritmos y Programación I (TA130–95.11) – Curso Santisi – 4to parcialito – 14/06/2024
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Se tiene una lista enlazada genérica definida con su nodo como struct nodo { void *dato; struct
+nodo *sig; }; y el TDA como typedef struct { struct nodo *prim } lista_t;.
+Implementar la primitiva:
+void lista_destruir(lista_t *l, void (*destruir_dato)(void *));
+que dada una lista l libere toda la memoria asociada tanto a ella como a sus datos.
+2. Cuando se empata una votación en el Senado el reglamento dice que la misma debe repetirse, por si
+algún senador quiere cambiar su voto.
+Implementar una función:
+char **cambiaron_voto(const char *votos1[], size_t n1,
+const char *votos2[], size_t n2, size_t *ncambiaron);
+que recibe dos arreglos de cadenas de caracteres votos1 y votos2 de longitudes n1 y n2 respectivamente y ambos ordenados de forma alfabética, que representan los votos positivos de la primera
+y la segunda votación. Computar de forma eficiente y devolver por el nombre un arreglo con los
+nombres de los senadores que cambiaron su voto y por la interfaz la longitud en ncambiaron.
+3. Implementar una función:
+void insertar_abajo(pila_t *pila, void *elemento);
+que dada una pila inserte el elemento al fondo de la misma usando recursividad.
+(El TDA pila_t tiene primitivas esta_vacia, apilar, desapilar y ver_tope.)
+¡Suerte! :)
+
+

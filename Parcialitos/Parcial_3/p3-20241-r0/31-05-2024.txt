@@ -1,0 +1,40 @@
+Algoritmos y Programación I (TA130–95.11) – Curso Santisi – 3er parcialito – 31/05/2024
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Se tiene un sistema de chats donde se quiere sacar una estadística de los usuarios
+que más participan. Para esto se propone un TDA que registre cada vez que
+un usuario hable para poder después establecer un ranking. Se pide:
+a. Declarar la estructura que encapsula el TDA. Explicar qué representa
+cada miembro y documentar la invariante de representación.
+b. Implementar la primitiva char *estadistica_usuario_top(const
+estadistica_t *e); que devuelva el nombre del usuario más hablador
+en la estadística e.
+c. Implementar la primitiva bool estadistica_registrar(estadistica_t
+*e, const char *usuario); que registre en la estadística e que el
+usuario acaba de escribir un mensaje.
+estadistica_t *e = estadistica_crear();
+estadistica_registrar(e, "Juan");
+estadistica_registrar(e, "Maria");
+estadistica_registrar(e, "Juan");
+estadistica_registrar(e, "Carlos");
+estadistica_usuario_top(e); // "Juan"
+2. Se tiene un archivo binario que representa cadenas de caracteres con el siguiente
+formato:
++----+-----+-----+----+-----+----+-----+-----+
+| 2 | '9' | '5' | 1 | '.' | 2 | '1' | '1' |
++----+-----+-----+----+-----+----+-----+-----+
+donde por cada cadena hay una secuencia de un size_t que representa la
+longitud de la misma y luego los caracteres que la componen. El archivo de
+ejemplo contiene las cadenas {"95", ".", "11"}.
+a. Se pide escribir una función bool escribir_cadena(const char *s,
+FILE *f); que escriba la cadena s en el archivo f.
+b. Se pide escribir una función bool escribir_cadenas(const char
+*ss[], size_t n, const char *ruta); que reciba un arreglo de n
+cadenas ss y lo escriba en el archivo indicado por la ruta.
+3. Escribir un programa que se ejecute como:
+./calculadora operando1 operador operando2
+donde operando1 y operando2 son números y operador tiene que ser '+', '-',
+‘*’ o ‘/’. El programa debe imprimir el resultado de la operación. Por ejemplo,
+para ./calculadora 5 * 3 debe imprimir 15.
+¡Suerte! :)
+
+

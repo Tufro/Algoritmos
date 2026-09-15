@@ -1,0 +1,21 @@
+Algoritmos y Programación I (TA130) – Curso Santisi – 4to parcialito – 25/11/2024
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Teniendo representado el TDA lista genérica como typedef struct {struct nodo *prim;}
+lista_t; y el nodo struct nodo {struct nodo *sig; void *dato;}; implementar una primitiva
+void *lista_borrar(lista_t *l, void *e, int (*cmp)(void *a, void *b));
+que busque la primera ocurrencia del elemento e en la lista y elimine ese nodo devolviendo el elemento.
+La función cmp devuelve 0 si dos elementos son iguales.
+2. Agobiado ante la cantidad de mensajes en Discord un docente programó un bot que recopila los
+padrones del canal #grupos-tp, correspondientes a los alumnos que forman grupos, y pone cada uno
+de ellos ordenados en un arreglo.
+Tiene además un listado de alumnos struct alumno {char nombre[MAX_NOMBRE]; int padron;
+}; también ordenado por número de padrón.
+Implementar una función
+struct alumno *alumnos_antisociales(const struct alumno alumnos[], size_t nalumnos,
+const int padrones_grupos[], size_t npadrones, size_t *nantisociales);
+que identifique de forma eficiente y devuelva un listado con los alumnos que no formaron grupo.
+3. Escribir una función que dado un vector de enteros y su longitud devuelva, utilizando recursividad, si
+todos los elementos del vector son iguales.
+¡Suerte! :)
+
+

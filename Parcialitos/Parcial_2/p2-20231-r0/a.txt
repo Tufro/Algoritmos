@@ -1,0 +1,2 @@
+S.ficheros     Tamaño Usados  Disp Uso% Montado en
+/dev/sdb1        916G   401G  469G  47% /mnt/segundamemoria

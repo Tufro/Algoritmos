@@ -1,0 +1,24 @@
+Algoritmos y Programación (TA130) – Curso Santisi – 2do parcialito – 09/05/2025
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. El formato de números de punto flotante FP8 E4M3 permite almacenar un número de la forma
+(−1)s × 2e × m, donde s es el signo, e el exponente y m la mantisa según el siguiente esquema:
+MSB
+LSB
++----+----+----+----+----+----+----+----+
+| s | e3 | e2 | e1 | e0 | m2 | m1 | m0 |
++----+----+----+----+----+----+----+----+
+Se pide:
+Definir el tipo fp8_t en base al tipo uint8_t.
+Implementar la función int comparar_fp8(fp8_t a, fp8_t b); que compare los números a
+y b. La función debe devolver negativo si a < b, positivo si a > b y cero si a = b.
+Si un número es positivo (s = 0) y otro negativo (s = 1) ese número será mayor. Lo mismo si un
+exponente es mayor que otro y luego si una mantisa es mayor a otra, en ese orden.
+2. Se tiene una estructura alumno con un padrón de tipo int y un nombre de tipo char *:
+Declarar la estructura y redefinirla como alumno_t.
+Implementar la función alumno_t *clonar_alumno(const alumno_t *a); que devuelva una
+copia exacta de a en memoria nueva.
+3. Implementar una función char *leer_linea(); que lea una línea desde stdin (hasta el '\n'). Debe
+devolver la cadena leída o NULL en caso de error.
+¡Suerte! :)
+
+

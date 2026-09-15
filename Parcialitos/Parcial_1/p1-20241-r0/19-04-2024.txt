@@ -1,0 +1,21 @@
+Algoritmos y Programación I (TA130-95.11) – Curso Santisi – 1er parcialito – 19/04/2024
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Se pide:
+a. Implementar una función void centrar(char cadena[], size_t largo); que centre la cadena a
+una línea de largo caracteres. Asumir que el vector tiene al menos largo + 1 de capacidad.
+Por ejemplo dada la llamada con ("hola", 10) la cadena debe quedar " hola " después de
+invocada la función.
+No se permite el uso de funciones de biblioteca en este ejercicio. Todo lo necesario debe ser implementado.
+b. Con un pequeño código mostrar cómo utilizar a la función con la cadena del ejemplo anterior.
+2. Una matriz es simétrica si tiene simetría con respecto a su diagonal principal o, lo que es lo mismo, si sus
+filas son iguales a sus columnas.
+a. Escribir una función es_simetrica que reciba una matriz de flotantes de tamaño N×N y que retorne si
+la misma es simétrica o no.
+b. Teniendo #define N 3 escribir un pequeño ejemplo de código que declare y defina una matriz, llame a
+la función del punto anterior e imprima un mensaje para el usuario según el resultado.
+3. Implementar un programa que lea de stdin hasta que se termine la entrada del usuario. Al finalizar el
+programa debe indicar la cantidad de palabras ingresadas.
+Asumir que todos los caracteres de una palabra son los que valida la función int isalnum(int c); de
+ctype.h.
+Realizar todas las validaciones pertinentes.
+¡Suerte! :)
