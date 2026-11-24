@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define LARGO 10
 
 void	centrar(char cadena[], size_t largo) {
 	size_t	len = 0;
@@ -19,7 +20,7 @@ void	centrar(char cadena[], size_t largo) {
 	}
 	
 	for(size_t j = 0; j < largo; j++) {
-		if(j >= izq && j <= der) {
+		if(j >= izq && j < der) {
 			cadena[j] = rep[j - izq];
 		} else {
 			cadena[j] = ' ';
@@ -30,11 +31,11 @@ void	centrar(char cadena[], size_t largo) {
 }
 
 int main() {
-	char c[] = "hola";
+	char c[LARGO + 1] = "hola";
 	
 	printf("%s\n", c);
 
-	centrar(c, 10);
+	centrar(c, LARGO);
 
 	printf("%s\n", c);
 

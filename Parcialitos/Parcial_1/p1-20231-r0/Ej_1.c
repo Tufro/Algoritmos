@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 void abreviar_nombre(char nombre[]) {
 	size_t	len = 0;
@@ -9,20 +9,21 @@ void abreviar_nombre(char nombre[]) {
 
 	if(len < 3 || len > 11) {
 		fprintf(stderr, "ERROR CON TAMANIO\n");
+		return;
  	}
 
-	nombre[1] = (char)len + '0';
-	nombre[2] = nombre[len -1];
+	nombre[1] = (char)(len - 2) + '0';
+	nombre[2] = nombre[len - 1];
 	nombre[3] = '\0';
-
-	printf("%s\n", nombre); 
 }
 
 int main() {
 	
-	char aa[] = "pirulo";
+	char a[] = "pirulo";
 
-	abreviar_nombre(aa);
+	abreviar_nombre(a);
+	
+	printf("%s\n", a); 
 
 	return 0;
 }

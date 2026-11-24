@@ -1,0 +1,49 @@
+int main() {
+	char	buffer[128];
+	bool	primero = true,
+		r;
+	poligono_t	*ex = NULL,
+			*actual = NULL;
+	
+	while(fgets(buffer, sizeof(buffer), stdin)) {
+		size_t	n = atoi(buffer);
+
+		vector_t   cm,
+			   *coordenadas = malloc(n * sizeof(vector_t));
+		if(!coordenadas) return 1;
+
+		for(size_t i = 0; i < n + 1; i++) {
+			if(!fgets(buffer, sizeof(buffer), stdin)) {
+				free(coordenadas);
+				return 1;
+			}
+
+			size_t	j = 0;
+
+			while(buffer[j] != ' ') j++;
+
+			buffer[j] = '\0';
+			
+			if(i < n) {
+				coordenadas[i].x = atof(buffer);
+				coordenadas[i].y = atof(buffer + j +1);
+			} else {
+				cm.x = atof(buffer);
+				cm.y = atof(buffer + j + 1);
+			}
+		}
+	
+		fgets(buffer, sizeof(buffer), stdin);
+
+		double a = atof(buffer);
+	
+		actual = poligono_crear(coordenadas, n);
+		poligono_get_cm(actual, cm);
+		poligono_get_a(actual, a);
+	
+		free(coordenadas);
+		
+		if(!primero) {
+			if(!fgets(buffer, sizeof(buffer), stdin));
+				return 1;	
+			

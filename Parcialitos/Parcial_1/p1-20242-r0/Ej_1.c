@@ -1,36 +1,21 @@
 #include "stdio.h"
 #define C "130"
 
-void	mi_atoi(const char s[]) {
+unsigned int	mi_atoi(const char s[]) {
 	size_t	len = 0;
-	int	rep;
+	unsigned int	numero = 0;
 
-	while(s[len] != '\0') {
-		len++;
+	while(s[len] != '\0') len++;
+
+	for(size_t i = 0; i < len; i++) {
+		numero = numero * 10 + s[i] - '0';
 	}
 
-	printf("len = %ld\n", len);
-
-	for(int i = 0; i < len; i++) {
-
-		printf("s[%d] = %c\n", i, s[i]);
-		rep += s[i] * 10;
-		printf("%dº rep = %d\n", i, rep);
-
-	}
-
-	putchar('\n');
-
-	//return n;
+	return numero;
 }
 
 int main() {
-	
-	//char	n = C[1] + C[0];
-	
-	//printf("(C[1] = %c + C[0] = %c) = %c\n", C[1], C[0], n - '0');
-
-	mi_atoi(C);
+	printf("\"%s\" se escribe como %u\n", C, mi_atoi(C));
 
 	return 0;
 }

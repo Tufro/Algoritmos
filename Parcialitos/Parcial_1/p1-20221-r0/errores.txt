@@ -1,9 +1,0 @@
-Ej_2.c: In function ‘main’:
-Ej_2.c:27:55: error: incompatible type for argument 2 of ‘es_triangular_superior’
-   27 |         printf("%s\n", (es_triangular_superior(N, a[N][N])) ? v : f);
-      |                                                   ~~~~^~~
-      |                                                       |
-      |                                                       float
-Ej_2.c:4:48: note: expected ‘float (*)[dim]’ but argument is of type ‘float’
-    4 | bool    es_triangular_superior(int dim, float  matriz[dim][dim]) {
-      |                                         ~~~~~~~^~~~~~~~~~~~~~~~

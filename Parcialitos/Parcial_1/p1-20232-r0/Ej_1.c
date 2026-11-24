@@ -1,32 +1,29 @@
-#include "stdio.h"
+#include <stdio.h>
 
-void abreviar_texto(char nombre[]) {
-	int	len = 0,
-		j = 0;
+void	abreviar_texto(char nombre[]) {
+	size_t	len = 0,
+		i = 0;
 
-	while (nombre[len] != '\0') {
-		char c = nombre[len];
+	while(nombre[len] != '\0') {
+		char	c = nombre[len];
 
-		if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u') {
- 			nombre[j] = c;
-			j++;
- 		}
-
-       		len++;
+		if(c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u') {
+			nombre[i++] = c;
+		}
+		len++;
 	}
 
-    nombre[j] = '\0';
-
-    printf("%s\n", nombre); 
+	nombre[i] = '\0';
 }
 
 int main() {
-	char	c[] = "algoritmos y programacion";
-	
-	printf("%s\n", c); 
+	char	a[] = "algoritmos y programacion";
 
-	abreviar_texto(c);
+	printf("\"%s\"\n", a);
+
+	abreviar_texto(a);
+
+	printf("\"%s\"\n", a);
 
 	return 0;
 }
-

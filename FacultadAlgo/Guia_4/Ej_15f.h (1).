@@ -1,0 +1,16 @@
+#include "stdio.h"
+
+char *left_trim(char *str) {
+    char *ptr = str;
+    while (*ptr == ' ' || *ptr == '\t' || *ptr == '\n') {
+        ptr++; // Avanzamos el puntero hasta encontrar un caracter no espacio
+    }
+    return ptr;
+}
+
+int main() {
+    char str[] = "Hola, Mundo! bienvenidos a C."; // Cadena modificable
+    printf("Original: %s\n", str);
+    printf("CamelCase: %s\n", puaj(str));
+    return 0;
+}

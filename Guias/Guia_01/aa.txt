@@ -1,0 +1,11 @@
+Ej_18.c: In function ‘numero_e’:
+Ej_18.c:14:16: error: implicit declaration of function ‘exponencial’ [-Wimplicit-function-declaration]
+   14 |         return exponencial(n, 1.0);
+      |                ^~~~~~~~~~~
+Ej_18.c: At top level:
+Ej_18.c:17:9: error: conflicting types for ‘exponencial’; have ‘double(unsigned int,  double)’
+   17 | double  exponencial(unsigned int n, double x) {
+      |         ^~~~~~~~~~~
+Ej_18.c:14:16: note: previous implicit declaration of ‘exponencial’ with type ‘int()’
+   14 |         return exponencial(n, 1.0);
+      |                ^~~~~~~~~~~

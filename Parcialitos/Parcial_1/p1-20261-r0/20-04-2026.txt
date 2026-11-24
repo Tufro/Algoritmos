@@ -1,0 +1,21 @@
+Algoritmos y Programación (TA130) – Curso Santisi – 1er parcialito – 20/04/2026
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. a. Escribir una función
+bool extraer_columna_csv(const char csv[], char sep, size_t ncol, char col[]);
+que dada una cadena de caracteres csv que representa una línea CSV separada por sep y un
+número de columna ncol guarde en la cadena col la columna que corresponda a ese número.
+La función devuelve true en caso de funcionar bien, false en caso de falla.
+Ejemplo, si se llama a la función con "papas|2kg|55.75" como csv, '|' como sep y 1 como
+ncol deberá devolver "2kg".
+Aclaración: No está permitido el uso de funciones de la biblioteca. Todas las necesarias deben
+ser implementadas.
+b. Dar un mínimo ejemplo de invocación de la función.
+2. a. Escribir una función sumar_positivos que reciba una matriz de flotantes de tamaño N×M y que
+retorne la suma de los elementos de la matriz que sean positivos.
+b. Teniendo #define N 3 y #define M 2 escribir un pequeño ejemplo de código que declare y
+defina una matriz, llame a la función del punto anterior e imprima un mensaje para el usuario
+con el resultado.
+3. Implementar un programa que le pida al usuario las longitudes de las dos dimensiones de un rectángulo
+e imprima el área del mismo.
+Realizar todas las validaciones pertinentes.
+¡Suerte! :)

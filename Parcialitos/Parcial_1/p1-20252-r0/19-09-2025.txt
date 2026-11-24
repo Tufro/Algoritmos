@@ -1,0 +1,23 @@
+Algoritmos y Programación (TA130) – Curso Santisi – 1er parcialito – 19/09/2025
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. a. Escribir una función
+void separar(const char s[], char a[], char b[]);
+que dada una cadena de caracteres s que contiene una coma (',') la separe en dos partes a y b, antes y
+después de la coma respectivamente.
+Por ejemplo: Si s = "hola,mundo" entonces a = "hola" y b = "mundo".
+Aclaración: No está permitido el uso de funciones de la biblioteca. Todas las necesarias deben ser
+implementadas.
+b. Dar un mínimo ejemplo de invocación de la función.
+2. a. Escribir una función que reciba una matriz A en R
+
+N×M y que devuelva si cada una de las M columnas
+
+de la matriz suman lo mismo o no.
+b. Dar un mínimo ejemplo de invocación de la función.
+3. Tenemos que ayudar al Banco Galicia porque el dólar está cambiando de valor tan rápido que no pueden
+mantener andando su app. Si el precio de referencia del dólar es x ellos ponen el precio de compra en $30
+menos y el de venta en $30 pesos más.
+Escribir un programa que deje que el CEO del banco ingrese el valor de referencia y el programa le diga a
+cuánto comprar y a cuánto vender. A ver si con eso podemos hacer revivir la app.
+Realizar todas las validaciones pertinentes.
+¡Suerte! :)

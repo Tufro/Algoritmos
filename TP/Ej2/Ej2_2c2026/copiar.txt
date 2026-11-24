@@ -1,0 +1,33 @@
+bool	poligono_hay_interseccion(const poligono_t *a, const poligono_t *b) {
+	if(vector_norma(vector_restar(a->cm, b->cm)) > a->radio + b->radio) {
+		return false;
+	}
+
+	for(size_t i = 0; i < a->n; i++) {
+		vector_t	aa = poligono_get_coordenada(a, (i + 1) % a->n),
+			 	bb = poligono_get_coordenada(a, i),
+				
+				segmento = vector_restar(aa, bb),
+
+			  	eje = vector_perpendicular(segmento);
+
+		float		min_a,	max_a, min_b = 0.0f, max_b = 0.0f,
+				proy = vector_producto_escalar(poligono_get_coordenada(a, 0), eje);
+		
+		min_a = max_a = proy;
+
+		for(size_t j = 1; j < a->n; j++) {
+			proy = vector_producto_escalar(poligono_get_coordenada(a, j), eje);
+			if(proy < min_a)
+				min_a = proy;
+
+			if(proy > max_a)
+				max_a = proy;
+
+			if(max_a < min_b || max_b < min_a)
+				return false;
+		}	
+	}
+
+	return true;
+}

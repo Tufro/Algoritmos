@@ -1,5 +1,5 @@
 #include "stdio.h"
-#define N -563
+#define N 0
 
 void imprimir_numero(int n) {
 	if(n < 0) {

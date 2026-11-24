@@ -1,0 +1,22 @@
+Algoritmos y Programación (TA130) – Curso Santisi – 1er parcialito – 18/09/2026
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. Un famoso twittero tiene compulsión por crear siglas nuevas todo el tiempo.
+a. Implementarle una función:
+void crear_sigla(const char texto[], char siglas[]);
+que dado un texto genere una cadena siglas que contenga la letra inicial en mayúsculas de cada una
+de las palabras del mismo y un signo de admiración ('!') al final.
+Por ejemplo para el texto "Washington es la capital" las siglas deben ser "WELC!".
+(Nota: Se puede utilizar la función char toupper(char) de <ctype.h> para convertir un carácter a
+mayúsculas.)
+b. Dar un mínimo ejemplo de invocación de la función.
+2. Una matriz está balanceada si la suma de los elementos que estén sobre la diagonal principal es igual a la
+suma de los elementos que estén debajo de la diagonal principal.
+a. Escribir una función que reciba una matriz en RN ×N y devuelva si la matriz está balanceada o no.
+b. Teniendo #define N 3 escribir un pequeño ejemplo de código que declare y defina una matriz, llame a
+la función del punto anterior e imprima un mensaje para el usuario según el resultado obtenido.
+3. Implementar un programa que le pida al usuario números positivos por stdin de a uno por línea hasta
+agotar la entrada. Finalizada la entrada del usuario el programa deberá imprimir el promedio de los números
+ingresados y finalizar. En caso de haber un valor inválido el programa deberá abortar su ejecución.
+Nota: No es necesario (y no está permitido) almacenar todos los valores individuales ingresados en memoria,
+se desconoce esa cantidad.
+¡Suerte! :)

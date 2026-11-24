@@ -1,0 +1,26 @@
+float   area_poligono(float poligono[][2], size_t n) {
+	float	area = 0.0;	
+
+	for(size_t i = 0; i < n; i++) {
+		area += producto_vectorial(poligono[i], poligono[(i + 1) % n]);
+	}
+
+	return 0.5 * area;
+}
+
+void	centro_de_masa(float poligono[][2], size_t n, float  cm[2]) {
+	float	area = area_poligono(poligono, n);
+	
+	cm[0] = 0.0;
+	cm[1] = 0.0;
+	
+	for(size_t i = 0; i < n; i++) {
+		float	producto = producto_vectorial(poligono[i], poligono[(i + 1) % n]);
+	
+		cm[0] += (poligono[i][0] + poligono[(i + 1) % n][0]) * producto;
+		cm[1] +=(poligono[i][1] + poligono[(i + 1) % n][1]) * producto;
+	}
+	
+	cm[0] = cm[0] / (6.0 * area);
+	cm[1] = cm[1] / (6.0 * area);
+}

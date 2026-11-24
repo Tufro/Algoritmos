@@ -1,0 +1,19 @@
+Algoritmos y Programación (TA130) – Curso Santisi – 1er parcialito, 1er recuperatorio –
+23/06/2025
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+1. a. Escribir una función
+void left_trim(char cadena[]);
+que elimine todos los caracteres de espacio que haya al comienzo de la cadena. Por ejemplo, si se
+le pasara la cadena " hola mundo " después de ejecutar la función la misma deberá ser "hola
+mundo ".
+b. Con un pequeño código de ejemplo mostrar cómo utilizar a la función con las cadenas del ejemplo
+anterior.
+2. a. Escribir una función intercambiar_columnas que reciba una matriz de flotantes de tamaño
+N×N y dos índices e intercambie las columnas correspondientes a los índices recibidos.
+b. Teniendo #define N 3 escribir un pequeño ejemplo de código que declare y defina una matriz,
+y llame a la función del punto anterior.
+3. Estudios recientes afirman que la edad de un perro en años humanos se calcula como Eh = 16 ln Ep +31,
+donde Ep es la edad perruna y Eh es la edad humana. Escribir un programa que le pida al usuario la
+edad de un perro e imprima, de ser posible, sus años humanos. (Nota: para calcular un logaritmo
+natural puede utilizarse la función double log(double x); de la biblioteca <math.h>.)
+¡Suerte! :)
